@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  box-sizing: content-box;
+  position: absolute;
+}
+
+.hero-section {
+  background: url(../Pics/beauty-bg.jpg);
+  padding: 100px;
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-section > h1 {
+  padding: 1px 20px;
+  background-color: #11122b;
+  color: #cbcbcb;
+  width: 290px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.hero-section > h2 {
+  display: flex;
+  padding: 1px 20px;
+  background-color: #cea135;
+  color: #11122b;
+  width: 200px;
+  height: 60px;
+  border-radius: 2px;
+  align-items: center;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.row {
+  float: left;
+  max-width: 1080px;
+  margin: auto;
+}
+
+.row > img {
+  width: 300px;
+  padding: 10px;
+  height: 400px;
+} 
+
+.designs {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  line-height: 60px;
+  color: #555;
+}
+
+.title ::after {
+  content: '';
+  background-color: #ff523b;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.f-products {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.f-container {
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: 0.5s;
+}
+
+.f-container img {
+  width: 80%;
+}
+
+.designs > h2 {
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  line-height: 60px;
+  color: #555;
+}
+
+.designs > h2::after {
+  content: '';
+  background-color: #ff523b;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.designs > .f-products > .f-container:hover {
+  transform: translateY(-5px);
+}
+
+.designs > .f-container:hover {
+  transform: translateY(-5px);
+}
+
+.marquee {
+  background: url(../Pics/pexels-element5-1470165.jpg);
+  display: inline-block;
+  font-size: 5em;
+  margin-top: 20px;
+  color: #cea135;
+  height: 100px;
+}
